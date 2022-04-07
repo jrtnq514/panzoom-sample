@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Panzoom>
+      <!-- PUT THE IMAGE YOU WANT HERE -->
+      <img alt="Vue logo" src="./assets/logo.png">
+<!--   Uncomment to use SVG   -->
+<!--      <svg viewBox="0 0 10 10" x="200" width="100">-->
+<!--        <circle cx="5" cy="5" r="4" />-->
+<!--      </svg>-->
+    </Panzoom>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Panzoom from "@/components/Panzoom";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Panzoom,
   }
 }
 </script>
